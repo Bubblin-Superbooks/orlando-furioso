@@ -20,7 +20,8 @@ body {
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5 {
   width: 100%;
   text-align: center;
   line-height: calc(2 * 4vw * 1.50);
@@ -95,17 +96,19 @@ p.start-chapter:first-letter {
 
 blockquote {
   text-align: center;
-  font-size: 90%;
   font-style: italic;
   position: relative;
   quotes: "\201C""\201D""\2018""\2019";
-  width: 90%;
   margin: calc( 1/2 * (150vh *(1115/1443))/100 * 7/5) auto;
-  /* background: #ffc; /*   /* Enable this color if require */
+  margin: calc( 1/2 * 4vw * 1.50) 0;
+  margin: 0 0;
+  /*background: #ffc; */
+  display: inline-block;
+  width: 100%;
 }
 
 blockquote p, blockquote em {
-  margin: calc( 1/2 * (150vh *(1115/1443))/100 * 7/5) auto !important;
+  margin: 0 auto !important;
 }
 
 pre,
@@ -115,8 +118,8 @@ code {
   white-space: -pre-wrap;
   white-space: -o-pre-wrap;
   word-wrap: break-word;
-/*  margin: 0 auto calc( 4 * (150vh *(1115/1443))/100 * 7/5); */
   margin: 0;
+  padding: 0;
   text-align: center;
   font-family: 'EB Garamond', serif;
   font-style: normal;
@@ -127,6 +130,7 @@ code {
   line-height: calc(4vw * 1.50);
   font-kerning: normal;
   text-rendering: geometricPrecision;
+  /*background: pink;*/
 }
 
 ol {
@@ -239,7 +243,7 @@ hr::before {
   max-height: calc(17 * (4vw * 1.5) + 4vw);
   break-after: right;
   display:inline-block;
-  /* background: aliceblue; */ /* enable to see the maximum staging area */
+  /*background: aliceblue;*/  /* enable to see the maximum staging area */
 }
 
 .flex {
